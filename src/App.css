@@ -1,0 +1,297 @@
+.app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+  direction: rtl;
+}
+
+.app-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.app-header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.app-header p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.screen {
+  max-width: 700px;
+  margin: 0 auto;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-secondary {
+  background: #667eea;
+  color: white;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.btn-secondary:hover {
+  background: #5568d3;
+}
+
+.btn-start {
+  background: #10b981;
+  color: white;
+  width: 100%;
+  font-size: 18px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.btn-start:hover {
+  background: #059669;
+}
+
+.btn-game {
+  flex: 1;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.btn-correct {
+  background: #16a34a;
+  color: white;
+}
+
+.btn-correct:hover {
+  background: #15803d;
+}
+
+.btn-skip {
+  background: #2563eb;
+  color: white;
+}
+
+.btn-skip:hover {
+  background: #1d4ed8;
+}
+
+.btn-foul {
+  background: #dc2626;
+  color: white;
+}
+
+.btn-foul:hover {
+  background: #b91c1c;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.input-group input,
+.input-group select {
+  flex: 1;
+}
+
+.input-group button {
+  width: auto;
+  padding: 10px 20px;
+}
+
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.player-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 4px solid #667eea;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.player-name {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.player-team {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.timer {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.timer p {
+  font-size: 72px;
+  font-weight: bold;
+  color: #667eea;
+}
+
+.current-word {
+  background: white;
+  padding: 50px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.current-word p {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+}
+
+.scores {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.score-item {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.score-item span {
+  display: block;
+  font-weight: bold;
+}
+
+.score-item span:first-child {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.score-item span:last-child {
+  font-size: 24px;
+}
+
+.game-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.room-code {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f0f0f0;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.room-code p {
+  font-size: 18px;
+  color: #667eea;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.room-code-display {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.error-message {
+  background: #fca5a5;
+  color: #7f1d1d;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.app-footer {
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.app-footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.app-footer a:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 15px;
+  }
+
+  .app-header h1 {
+    font-size: 36px;
+  }
+
+  .current-word p {
+    font-size: 36px;
+  }
+
+  .timer p {
+    font-size: 56px;
+  }
+
+  .scores {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+}

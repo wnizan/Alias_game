@@ -1,0 +1,131 @@
+.app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+  direction: rtl;
+}
+
+.app-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.app-header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.home-screen, .online-screen, .lobby-screen, .playing-screen {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.btn-primary, .btn-secondary {
+  width: 100%;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-secondary {
+  background: #667eea;
+  color: white;
+}
+
+.room-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  margin: 15px 0;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin: 10px 0;
+  font-size: 16px;
+  direction: rtl;
+}
+
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.player-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  border-left: 4px solid #667eea;
+}
+
+.error-message {
+  background: #fca5a5;
+  color: #7f1d1d;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px;
+  text-align: center;
+}
+
+.timer {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.timer p {
+  font-size: 72px;
+  font-weight: bold;
+  color: #667eea;
+}
+
+.current-word {
+  background: white;
+  padding: 50px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.current-word p {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.app-footer {
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
